@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
-import icon from '../../assets/img/chia_circle.svg';
+import icon from '../../assets/img/kiwi_circle.svg';
 
 const GlobalStyle = createGlobalStyle`
   body,
@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
     background-color: silver;
   }
 
-  body { 
+  body {
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -114,7 +114,7 @@ export default function About(props: Props) {
         </StyledLink>
         <StyledSubTitle>{description}</StyledSubTitle>
         <Spacer />
-        <div className="copyright">Copyright (c) 2021 Chia Network</div>
+        <div className="copyright">Copyright (c) 2021 Kiwi Network</div>
         <Spacer />
         <VersionsTable>
           {versions?.electron && (

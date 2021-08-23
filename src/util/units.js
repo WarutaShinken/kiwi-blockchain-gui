@@ -1,18 +1,18 @@
 const units = {
-  chia: 1,
+  kiwi: 1,
   mojo: 1 / 1e12,
   colouredcoin: 1 / 1e9,
 };
 
 const aliases = {
-  chia: ['ch', 'chia', 'Chia'],
+  kiwi: ['kw', 'kiwi', 'Kiwi'],
   mojo: ['mj', 'mojo'],
   colouredcoin: ['cc', 'colouredcoin'],
 };
 
 const display = {
-  chia: {
-    format: '{amount} CH',
+  kiwi: {
+    format: '{amount} KW',
     fractionDigits: 12,
   },
   mojo: {

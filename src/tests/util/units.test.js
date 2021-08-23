@@ -2,8 +2,8 @@ const units = require('../../util/units');
 
 describe('units', () => {
   describe('#getUnit', () => {
-    it('gets unit of chia', () => {
-      const result = units.getUnit('chia');
+    it('gets unit of kiwi', () => {
+      const result = units.getUnit('kiwi');
 
       expect(result).toBe(1);
     });
@@ -18,12 +18,12 @@ describe('units', () => {
       expect(result).toBe(1e-9);
     });
     it('supports uppercase characters', () => {
-      const result = units.getUnit('CHIA');
+      const result = units.getUnit('KIWI');
 
       expect(result).toBe(1);
     });
-    it('gets unit of chia using alias', () => {
-      const result = units.getUnit('ch');
+    it('gets unit of kiwi using alias', () => {
+      const result = units.getUnit('kw');
 
       expect(result).toBe(1);
     });
@@ -46,11 +46,11 @@ describe('units', () => {
     });
   });
   describe('#getDisplay', () => {
-    it('gets display of chia', () => {
-      const result = units.getDisplay('chia');
+    it('gets display of kiwi', () => {
+      const result = units.getDisplay('kiwi');
 
       expect(result).toEqual({
-        format: '{amount} CH',
+        format: '{amount} KW',
         fractionDigits: 12,
       });
     });
@@ -87,13 +87,13 @@ describe('units', () => {
       expect(result).toEqual(1);
     });
     it('modifies an existing unit', () => {
-      units.setUnit('chia', 9);
+      units.setUnit('kiwi', 9);
 
-      const result = units.getUnit('chia');
+      const result = units.getUnit('kiwi');
 
       expect(result).toEqual(9);
 
-      units.setUnit('chia', 1);
+      units.setUnit('kiwi', 1);
     });
   });
   describe('#setDisplay', () => {
@@ -111,15 +111,15 @@ describe('units', () => {
       });
     });
     it('updates an existing display', () => {
-      units.setDisplay('chia', {
-        format: '{amount} TXCH',
+      units.setDisplay('kiwi', {
+        format: '{amount} TXKW',
         fractionDigits: 0,
       });
 
-      const result = units.getDisplay('chia');
+      const result = units.getDisplay('kiwi');
 
       expect(result).toEqual({
-        format: '{amount} TXCH',
+        format: '{amount} TXKW',
         fractionDigits: 0,
       });
     });
