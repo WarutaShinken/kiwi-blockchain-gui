@@ -65,7 +65,7 @@ export default function FarmLatestBlockChallenges() {
           *Want to explore Kiwi’s blocks further? Check out{' '}
           <Link
             color="primary"
-            href="https://www.chiaexplorer.com/"
+            href="https://www.kiwiexplorer.cc/"
             target="_blank"
           >
             Kiwi Explorer
